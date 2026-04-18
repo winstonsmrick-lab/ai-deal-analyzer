@@ -9,7 +9,16 @@ import os
 st.title("📊 AI Deal Analyzer")
 
 st.caption("Analyze advertiser deals, bonus structures, and efficiency using AI insights")
+st.markdown("""
+---
+### 🚀 Built by **Winston Smrick**
+📊 AI Product Demo | Data + AI + Insights  
 
+👉 [Connect with me on LinkedIn](https://www.linkedin.com/in/winston-smrick-7344821a
+
+)
+---
+""")
 option = st.radio("Choose Data Source:", ["Upload CSV", "Fetch from MySQL"])
 
 data = ""
