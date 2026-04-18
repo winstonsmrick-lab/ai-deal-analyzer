@@ -23,7 +23,7 @@ if option == "Upload CSV":
     st.info("⬇️ New here? Download a sample dataset to try the app.")
     st.download_button(
     label="📥 Download Sample CSV",
-    data=open("deals.csv", "rb").read()
+    data=open("deals.csv", "rb").read(),
     file_name="sample_deals.csv",
     mime="text/csv"
     )
