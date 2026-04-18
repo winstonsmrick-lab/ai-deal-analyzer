@@ -1,16 +1,41 @@
 # 🚀 AI Deal Analyzer
 
-AI-powered dashboard to analyze advertiser deals, spend, and efficiency.
+AI-powered dashboard to analyze advertiser deals, spend, and efficiency using **Streamlit + OpenAI**.
+
+---
 
 ## 🔗 Live App
 👉 https://ai-deal-analyzer-5vqdxl3ajskzegreoykicn.streamlit.app
 
+---
+
 ## 💡 Features
-- Upload CSV
-- AI-powered insights
-- Visual dashboards
-- Spend distribution analysis
+
+- 📊 Upload CSV data  
+- 🤖 AI-powered insights  
+- 📈 Visual dashboards  
+- 🍩 Spend distribution analysis  
+
+---
+
+## 🧠 Tech Stack
+
+- Python  
+- Streamlit  
+- OpenAI API  
+- Pandas  
+- Matplotlib  
+
+---
 
 ## 👤 Built by
-Winston Smrick  
-[LinkedIn](https://www.linkedin.com/in/winston-smrick-7344821a)
+
+**Winston Smrick**  
+
+🔗 [LinkedIn](https://www.linkedin.com/in/winston-smrick-7344821a)
+
+---
+
+## ⭐ Why this project?
+
+This project demonstrates how AI can be used to analyze media and advertising deals, generate insights, and support decision-making.
