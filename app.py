@@ -20,6 +20,13 @@ data = ""
 
 if option == "Upload CSV":
     uploaded_file = st.file_uploader("Upload deals CSV", type=["csv"])
+    st.markdown("⬇️ Don't have data? Download a sample file:")
+    st.download_button(
+    label="📥 Download Sample CSV",
+    data=open("deals.csv", "rb"),
+    file_name="sample_deals.csv",
+    mime="text/csv"
+    )
     if uploaded_file:
         df = pd.read_csv(uploaded_file)
         data = df.to_string(index=False)
@@ -27,14 +34,9 @@ if option == "Upload CSV":
         st.divider()
 
 elif option == "Fetch from MySQL":
-    try:
-        engine = create_engine("mysql+pymysql://root:root123@localhost/adtech_ai")
-        df = pd.read_sql("SELECT * FROM deals", engine)
-        data = df.to_string(index=False)
-        st.dataframe(df)
-    except Exception as e:
-        st.error(f"DB Error: {e}")
-
+    st.warning("⚠️ MySQL integration is not enabled in this live demo.")
+    st.info("📌 Please use 'Upload CSV' option to test the app.")
+    
 if data:
     st.success("✅ Data ready for analysis")
 
