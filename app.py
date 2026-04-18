@@ -17,13 +17,13 @@ st.sidebar.markdown("[🔗 LinkedIn](https://www.linkedin.com/in/winston-smrick-
 option = st.radio("Choose Data Source:", ["Upload CSV", "Fetch from MySQL"])
 
 data = ""
-
+df = None
 if option == "Upload CSV":
     uploaded_file = st.file_uploader("Upload deals CSV", type=["csv"])
-    st.markdown("⬇️ Don't have data? Download a sample file:")
+    st.info("⬇️ New here? Download a sample dataset to try the app.")
     st.download_button(
     label="📥 Download Sample CSV",
-    data=open("deals.csv", "rb"),
+    data=open("deals.csv", "rb").read()
     file_name="sample_deals.csv",
     mime="text/csv"
     )
@@ -41,6 +41,9 @@ if data:
     st.success("✅ Data ready for analysis")
 
 if st.button("Analyze Deals"):
+    if df is None:
+        st.warning("⚠️ Please upload a CSV file before analyzing.")
+        st.stop()
 
     client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
@@ -197,8 +200,6 @@ else:
         else:
             st.info("👉 Click 'Analyze Deals' to generate insights")
 
-    elif option == "Fetch from MySQL":
-        if df is None:
-            st.warning("⚠️ Unable to fetch data from MySQL")
-        else:
-            st.info("👉 Click 'Analyze Deals' to generate insights")
+    #elif option == "Fetch from MySQL":
+        #st.warning("⚠️ MySQL integration is not enabled in this live demo.")
+        #st.info("📌 Please use 'Upload CSV' option to test the app.")
