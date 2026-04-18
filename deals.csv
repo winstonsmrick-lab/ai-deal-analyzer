@@ -1,0 +1,60 @@
+Deal,Program,Type,Spend
+HUL,KBC Prime Time,Paid,500000
+HUL,Kapil Sharma Show,Paid,300000
+HUL,Star Movies,Bonus,200000
+HUL,IPL Match,Paid,700000
+HUL,Serial Prime,Paid,250000
+
+Dabur,KBC Prime Time,Paid,200000
+Dabur,Serial Show,Paid,150000
+Dabur,Music Channel,Bonus,50000
+Dabur,IPL Match,Paid,300000
+Dabur,Regional Channel,Bonus,80000
+
+ITC,KBC Prime Time,Paid,400000
+ITC,News Channel,Paid,200000
+ITC,Movies Channel,Bonus,100000
+ITC,IPL Match,Paid,600000
+ITC,Late Night Show,Bonus,50000
+
+Patanjali,KBC Prime Time,Paid,150000
+Patanjali,Devotional Channel,Paid,100000
+Patanjali,Regional Movies,Bonus,70000
+Patanjali,IPL Match,Paid,200000
+Patanjali,Morning Show,Bonus,40000
+
+Lakme,KBC Prime Time,Paid,300000
+Lakme,Fashion Show,Paid,250000
+Lakme,Movies Channel,Bonus,120000
+Lakme,IPL Match,Paid,500000
+Lakme,Lifestyle Channel,Bonus,80000
+
+Tata Tea,KBC Prime Time,Paid,220000
+Tata Tea,News Channel,Paid,180000
+Tata Tea,Movies Channel,Bonus,90000
+Tata Tea,IPL Match,Paid,350000
+Tata Tea,Regional News,Bonus,60000
+
+Reliance,KBC Prime Time,Paid,600000
+Reliance,IPL Match,Paid,900000
+Reliance,Movies Channel,Bonus,300000
+Reliance,News Channel,Paid,400000
+Reliance,Regional Channel,Bonus,150000
+
+Marico,KBC Prime Time,Paid,250000
+Marico,Serial Show,Paid,200000
+Marico,Music Channel,Bonus,80000
+Marico,IPL Match,Paid,400000
+Marico,Lifestyle Channel,Bonus,70000
+
+Asian Paints,KBC Prime Time,Paid,350000
+Asian Paints,Home Show,Paid,220000
+Asian Paints,Movies Channel,Bonus,110000
+Asian Paints,IPL Match,Paid,450000
+Asian Paints,Regional Channel,Bonus,90000
+
+Zomato,IPL Match,Paid,500000
+Zomato,Movies Channel,Paid,200000
+Zomato,Music Channel,Bonus,100000
+Zomato,OTT Ads,Paid,300000
+Zomato,Late Night Show,Bonus,50000
