@@ -9,24 +9,11 @@ import os
 st.title("📊 AI Deal Analyzer")
 
 st.caption("Analyze advertiser deals, bonus structures, and efficiency using AI insights")
-st.markdown("""
-<div style="margin-top: 30px; padding: 15px; border-radius: 10px; background-color: #111; border: 1px solid #333;">
-    
-<h4 style="margin-bottom: 5px;">🚀 Built by Winston Smrick</h4>
+st.sidebar.markdown("## 👤 About")
+st.sidebar.markdown("**Winston Smrick**")
+st.sidebar.markdown("AI Product Demo")
 
-<p style="margin: 0; font-size: 14px; color: #aaa;">
-AI Product Demo • Data + AI + Insights
-</p>
-
-<p style="margin-top: 8px;">
-<a href="https://www.linkedin.com/in/winston-smrick-7344821a" target="_blank" 
-style="text-decoration: none; color: #4da6ff;">
-🔗 Connect on LinkedIn
-</a>
-</p>
-
-</div>
-""", unsafe_allow_html=True)
+st.sidebar.markdown("[🔗 LinkedIn](https://www.linkedin.com/in/winston-smrick-7344821a)")
 option = st.radio("Choose Data Source:", ["Upload CSV", "Fetch from MySQL"])
 
 data = ""
